@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_charakter"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Charakter"/>
+        <item
+            android:id="@+id/nav_inventar"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Inventar"/>
+        <item
+            android:id="@+id/nav_talente"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Talente"/>
+        <item
+            android:id="@+id/nav_gruppe"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Gruppe"/>
+    </group>
+
+    <item android:title="Meow">
+        <menu>
+            <item
+                android:id="@+id/nav_chat"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Chat"/>
+            <item
+                android:id="@+id/nav_kampf"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Kampf"/>
+            <item
+                android:id="@+id/nav_notizen"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Notizen"/>
+        </menu>
+    </item>
+
+</menu>
