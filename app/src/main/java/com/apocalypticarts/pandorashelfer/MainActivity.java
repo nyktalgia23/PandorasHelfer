@@ -13,7 +13,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -83,8 +82,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_charakter) {
-            // send nothing
-            CharakterFragment charakterFragment = CharakterFragment.newInstance("CharakterTest1", "CharakterTest2");
+            CharakterFragment charakterFragment = new CharakterFragment();
             FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction().replace(R.id.layout_for_fragment,
                     charakterFragment,
@@ -92,17 +90,32 @@ public class MainActivity extends AppCompatActivity
             ).commit();
 
         } else if (id == R.id.nav_inventar) {
-            Toast.makeText(this, "TODO", Toast.LENGTH_LONG).show();
+            InventarFragment inventarFragment = new InventarFragment();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.layout_for_fragment,
+                    inventarFragment,
+                    inventarFragment.getTag()
+            ).commit();
 
         } else if (id == R.id.nav_talente) {
-            Toast.makeText(this, "TODO", Toast.LENGTH_LONG).show();
+            TalenteFragment talenteFragment = new TalenteFragment();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.layout_for_fragment,
+                    talenteFragment,
+                    talenteFragment.getTag()
+            ).commit();
 
         } else if (id == R.id.nav_gruppe) {
-            Toast.makeText(this, "TODO", Toast.LENGTH_LONG).show();
+            GruppeFragment gruppeFragment = new GruppeFragment();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.layout_for_fragment,
+                    gruppeFragment,
+                    gruppeFragment.getTag()
+            ).commit();
 
         } else if (id == R.id.nav_chat) {
             // Send two strings to fragment
-            ChatFragment chatFragment = ChatFragment.newInstance("ChatTest1", "ChatTest2");
+            ChatFragment chatFragment = new ChatFragment();
             FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction().replace(R.id.layout_for_fragment,
                     chatFragment,
@@ -110,10 +123,20 @@ public class MainActivity extends AppCompatActivity
             ).commit();
 
         } else if (id == R.id.nav_kampf) {
-            Toast.makeText(this, "TODO", Toast.LENGTH_LONG).show();
+            KampfFragment kampfFragment = new KampfFragment();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.layout_for_fragment,
+                    kampfFragment,
+                    kampfFragment.getTag()
+            ).commit();
 
         } else if (id == R.id.nav_notizen) {
-            Toast.makeText(this, "TODO", Toast.LENGTH_LONG).show();
+            NotizenFragment notizenFragment = new NotizenFragment();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.layout_for_fragment,
+                    notizenFragment,
+                    notizenFragment.getTag()
+            ).commit();
 
         }
 
