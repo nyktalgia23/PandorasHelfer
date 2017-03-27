@@ -1,13 +1,241 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context="com.apocalypticarts.pandorashelfer.CharakterFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Charakter TODO"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:text="Name:"/>
+
+    <TextView
+        android:id="@+id/textGeburtstagTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textNameTitle"
+        android:layout_alignStart="@+id/textNameTitle"
+        android:layout_below="@+id/textNameTitle"
+        android:layout_marginTop="15dp"
+        android:text="Geburtstag:"/>
+
+    <TextView
+        android:id="@+id/textGroesseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textGeburtstagTitle"
+        android:layout_alignStart="@+id/textGeburtstagTitle"
+        android:layout_below="@+id/textGeburtstagTitle"
+        android:layout_marginTop="15dp"
+        android:text="Größe:"/>
+
+    <TextView
+        android:id="@+id/textGewichtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textGroesseTitle"
+        android:layout_alignStart="@+id/textGroesseTitle"
+        android:layout_below="@+id/textGroesseTitle"
+        android:layout_marginTop="16dp"
+        android:text="Gewicht:"/>
+
+    <TextView
+        android:id="@+id/textNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textNameTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/textGeburtstagTitle"
+        android:layout_toRightOf="@+id/textGeburtstagTitle"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textGeburtstagValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textNameValue"
+        android:layout_alignStart="@+id/textNameValue"
+        android:layout_alignTop="@+id/textGeburtstagTitle"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textGroesseValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textGeburtstagValue"
+        android:layout_alignStart="@+id/textGeburtstagValue"
+        android:layout_alignTop="@+id/textGroesseTitle"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textGewichtValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textGroesseValue"
+        android:layout_alignStart="@+id/textGroesseValue"
+        android:layout_alignTop="@+id/textGewichtTitle"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textMUTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textNameValue"
+        android:layout_marginLeft="146dp"
+        android:layout_marginStart="146dp"
+        android:layout_toEndOf="@+id/textNameValue"
+        android:layout_toRightOf="@+id/textNameValue"
+        android:text="Mut:"/>
+
+    <TextView
+        android:id="@+id/textGETitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textMUTitle"
+        android:layout_alignStart="@+id/textMUTitle"
+        android:layout_alignTop="@+id/textGeburtstagValue"
+        android:text="Gewandheit:"/>
+
+    <TextView
+        android:id="@+id/textCHTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textGETitle"
+        android:layout_alignStart="@+id/textGETitle"
+        android:layout_alignTop="@+id/textGroesseValue"
+        android:text="Charisma:"/>
+
+    <TextView
+        android:id="@+id/textKLTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textCHTitle"
+        android:layout_alignStart="@+id/textCHTitle"
+        android:layout_alignTop="@+id/textGewichtValue"
+        android:text="Klugheit:"/>
+
+    <TextView
+        android:id="@+id/textFFTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textKLTitle"
+        android:layout_alignStart="@+id/textKLTitle"
+        android:layout_below="@+id/textKLTitle"
+        android:layout_marginTop="15dp"
+        android:text="Fingerfertigkeit:"/>
+
+    <TextView
+        android:id="@+id/textKOTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textFFTitle"
+        android:layout_alignStart="@+id/textFFTitle"
+        android:layout_below="@+id/textFFTitle"
+        android:layout_marginTop="15dp"
+        android:text="Konstitution:"/>
+
+    <TextView
+        android:id="@+id/textINTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textKOTitle"
+        android:layout_alignStart="@+id/textKOTitle"
+        android:layout_below="@+id/textKOTitle"
+        android:layout_marginTop="15dp"
+        android:text="Intuition:"/>
+
+    <TextView
+        android:id="@+id/textKKTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textINTitle"
+        android:layout_alignStart="@+id/textINTitle"
+        android:layout_below="@+id/textINTitle"
+        android:layout_marginTop="15dp"
+        android:text="Körperkraft:"/>
+
+    <TextView
+        android:id="@+id/textMUValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textMUTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/textFFTitle"
+        android:layout_toRightOf="@+id/textFFTitle"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textGEValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textMUValue"
+        android:layout_alignStart="@+id/textMUValue"
+        android:layout_alignTop="@+id/textGETitle"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textCHValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textGEValue"
+        android:layout_alignStart="@+id/textGEValue"
+        android:layout_alignTop="@+id/textCHTitle"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textKLValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textCHValue"
+        android:layout_alignStart="@+id/textCHValue"
+        android:layout_alignTop="@+id/textKLTitle"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textFFValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textKLValue"
+        android:layout_alignStart="@+id/textKLValue"
+        android:layout_alignTop="@+id/textFFTitle"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textKOValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textFFValue"
+        android:layout_alignStart="@+id/textFFValue"
+        android:layout_alignTop="@+id/textKOTitle"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textINValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textKOValue"
+        android:layout_alignStart="@+id/textKOValue"
+        android:layout_alignTop="@+id/textINTitle"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textKKValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textINValue"
+        android:layout_alignStart="@+id/textINValue"
+        android:layout_alignTop="@+id/textKKTitle"
+        android:text="TextView"/>
+
+
+</RelativeLayout>
